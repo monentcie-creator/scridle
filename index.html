@@ -13,7 +13,7 @@
   body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
   main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
   h1 { font-size:28px; margin:0 0 4px; }
-  h2 { font-size:20px; margin:36px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
+  h2 { scroll-margin-top:64px; font-size:20px; margin:36px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
   p, li { color:var(--fg); }
   .muted { color:var(--muted); font-size:14px; }
   a { color:var(--accent); }
@@ -22,9 +22,18 @@
   th { background:var(--card); }
   .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
   @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border:none; padding:2px 0; } tr { border-bottom:1px solid var(--line); padding:8px 0; } td:first-child { font-weight:600; } }
+  nav { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line); z-index:1; }
+  nav .in { max-width:760px; margin:0 auto; padding:0 16px; display:flex; gap:4px; overflow-x:auto; }
+  nav a { display:block; padding:14px 12px 12px; color:var(--muted); text-decoration:none; font-weight:600; font-size:15px; border-bottom:3px solid transparent; white-space:nowrap; }
+  nav a.on { color:var(--fg); border-bottom-color:var(--accent); }
+  .btn { display:inline-block; background:var(--accent); color:#fff !important; text-decoration:none; font-weight:700; padding:12px 18px; border-radius:999px; }
 </style>
 </head>
 <body>
+<nav><div class="in">
+  <a href="./" class="on">🔒 Confidentialité</a>
+  <a href="suppression.html">🗑️ Supprimer mon compte</a>
+</div></nav>
 <main>
   <h1>Politique de confidentialité de Scridle</h1>
   <p class="muted">Dernière mise à jour : 21 octobre 2026</p>
@@ -85,14 +94,8 @@
   <p>Les données de votre compte sont conservées tant que votre compte existe. Elles sont supprimées dans un délai de 30 jours après votre demande de suppression. Les données conservées uniquement sur votre téléphone sont effacées si vous désinstallez le jeu.</p>
 
   <h2 id="suppression">9. Supprimer votre compte et vos données</h2>
-  <div class="box">
-    <p style="margin-top:0">Pour supprimer votre compte Scridle et toutes les données associées (e-mail, sauvegarde, classement, défis, jeton de notification) :</p>
-    <ol>
-      <li>Envoyez un e-mail à <a href="mailto:monentcie@gmail.com?subject=Suppression%20de%20mon%20compte%20Scridle">monentcie@gmail.com</a> avec pour objet « Suppression de mon compte Scridle ».</li>
-      <li>Envoyez-le <strong>depuis l'adresse e-mail de votre compte</strong> et indiquez votre pseudo.</li>
-    </ol>
-    <p style="margin-bottom:0">Nous supprimons le compte et les données dans un délai de 30 jours et vous le confirmons par e-mail. Aucune donnée n'est conservée, sauf obligation légale.</p>
-  </div>
+  <p>Vous pouvez demander à tout moment la suppression de votre compte Scridle et de toutes les données associées. La marche à suivre est détaillée sur la page dédiée :</p>
+  <p><a class="btn" href="suppression.html">🗑️ Supprimer mon compte</a></p>
 
   <h2>10. Vos droits</h2>
   <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification, la suppression ou la portabilité de vos données, vous opposer à un traitement ou en limiter l'usage, et retirer votre consentement, en écrivant à <a href="mailto:monentcie@gmail.com">monentcie@gmail.com</a>. Vous pouvez aussi déposer une réclamation auprès de la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</p>
