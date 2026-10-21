@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scridle — Politique de confidentialité</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d24; --muted:#5d5d6a; --line:#e4e4ea; --accent:#e0245e; --card:#f6f6f9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111116; --fg:#ececf1; --muted:#a3a3b2; --line:#2a2a33; --accent:#ff4f86; --card:#1a1a21; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:36px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { background:var(--card); }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border:none; padding:2px 0; } tr { border-bottom:1px solid var(--line); padding:8px 0; } td:first-child { font-weight:600; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité de Scridle</h1>
+  <p class="muted">Dernière mise à jour : 21 octobre 2026</p>
+
+  <p>Cette politique explique quelles données le jeu mobile <strong>Scridle</strong> (Android, identifiant <code>com.monent.scridle</code>) collecte, pourquoi, avec qui elles sont partagées et comment exercer vos droits.</p>
+
+  <h2>1. Qui sommes-nous ?</h2>
+  <p>Scridle est édité par <strong>Monent</strong> (ci-après « nous »), responsable du traitement des données.<br>
+  Contact : <a href="mailto:monentcie@gmail.com">monentcie@gmail.com</a></p>
+
+  <h2>2. Jouer sans compte</h2>
+  <p>Le jeu est jouable sans créer de compte. Dans ce cas, votre progression est enregistrée <strong>uniquement sur votre téléphone</strong> et nous ne recevons aucune donnée de jeu. Les publicités (section 5) restent affichées.</p>
+
+  <h2>3. Données que nous collectons</h2>
+  <table>
+    <thead><tr><th>Donnée</th><th>Quand</th><th>Pourquoi</th></tr></thead>
+    <tbody>
+      <tr><td>Adresse e-mail et mot de passe</td><td>Si vous créez un compte</td><td>Vous connecter et retrouver votre partie sur un autre téléphone. Le mot de passe est géré par Google Firebase Authentication ; nous ne le voyons jamais en clair.</td></tr>
+      <tr><td>Identifiant de compte (généré automatiquement)</td><td>Si vous créez un compte</td><td>Relier votre sauvegarde, votre place au classement et vos défis à votre compte.</td></tr>
+      <tr><td>Pseudo</td><td>Si vous en choisissez un</td><td>L'afficher dans le classement et permettre aux autres joueurs de vous trouver pour un défi.</td></tr>
+      <tr><td>Progression de jeu (vues, abonnés, planète, équipements, succès, scores de défi)</td><td>Avec un compte, synchronisée environ toutes les 5 minutes</td><td>Sauvegarde dans le cloud, classement, défis entre joueurs. Le classement et les équipements sont visibles par les autres joueurs.</td></tr>
+      <tr><td>Jeton de notification et type d'appareil (Android)</td><td>Si vous êtes connecté et acceptez les notifications</td><td>Vous prévenir quand un joueur vous lance un défi.</td></tr>
+      <tr><td>Identifiant publicitaire, adresse IP, informations sur l'appareil</td><td>Collectés par Google AdMob</td><td>Afficher des publicités et mesurer leur fonctionnement (section 5).</td></tr>
+    </tbody>
+  </table>
+  <p>Nous ne collectons pas votre position précise, vos contacts, vos photos ni vos fichiers.</p>
+
+  <h2>4. Notifications</h2>
+  <p>Avec votre autorisation, le jeu envoie :</p>
+  <ul>
+    <li>une notification locale (créée sur votre téléphone, sans serveur) lorsque vos gains hors-ligne sont plafonnés au bout de 3 heures ;</li>
+    <li>une notification push (Firebase Cloud Messaging) lorsqu'un joueur vous invite à un défi.</li>
+  </ul>
+  <p>Vous pouvez les désactiver à tout moment dans les réglages de votre téléphone.</p>
+
+  <h2>5. Publicité</h2>
+  <p>Scridle affiche des publicités via <strong>Google AdMob</strong> (bannière et vidéos récompensées facultatives). AdMob peut utiliser l'identifiant publicitaire de votre appareil et des cookies ou technologies similaires pour afficher des annonces, éventuellement personnalisées, et lutter contre la fraude.</p>
+  <p>Si vous êtes dans l'Espace économique européen, au Royaume-Uni ou en Suisse, un message de consentement (Google User Messaging Platform) vous demande votre choix au premier lancement. Vous pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire dans les réglages Android (Google → Annonces).</p>
+  <p>En savoir plus : <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les données des sites et applications partenaires</a>.</p>
+
+  <h2>6. Prestataires et partage</h2>
+  <p>Nous ne vendons pas vos données. Elles sont traitées par les services suivants de Google, qui agissent pour notre compte ou comme partenaire publicitaire :</p>
+  <ul>
+    <li><strong>Firebase Authentication</strong> (comptes), <strong>Cloud Firestore</strong> (sauvegardes, classement, défis, hébergés en Europe), <strong>Cloud Functions</strong> et <strong>Cloud Messaging</strong> (notifications de défi) — <a href="https://firebase.google.com/support/privacy?hl=fr">confidentialité Firebase</a> ;</li>
+    <li><strong>Google AdMob</strong> (publicités) — <a href="https://policies.google.com/privacy?hl=fr">règles de confidentialité de Google</a>.</li>
+  </ul>
+  <p>Certains traitements de Google peuvent avoir lieu hors de l'Union européenne ; Google les encadre par les clauses contractuelles types de la Commission européenne.</p>
+  <p>Les autres joueurs voient uniquement votre pseudo, vos scores, votre planète et vos équipements (classement et défis), jamais votre adresse e-mail.</p>
+
+  <h2>7. Bases légales</h2>
+  <ul>
+    <li><strong>Exécution du service</strong> : compte, sauvegarde cloud, classement, défis.</li>
+    <li><strong>Consentement</strong> : notifications, publicités personnalisées (que vous pouvez retirer à tout moment).</li>
+    <li><strong>Intérêt légitime</strong> : sécurité, prévention de la fraude, publicités non personnalisées qui financent le jeu gratuit.</li>
+  </ul>
+
+  <h2>8. Durée de conservation</h2>
+  <p>Les données de votre compte sont conservées tant que votre compte existe. Elles sont supprimées dans un délai de 30 jours après votre demande de suppression. Les données conservées uniquement sur votre téléphone sont effacées si vous désinstallez le jeu.</p>
+
+  <h2 id="suppression">9. Supprimer votre compte et vos données</h2>
+  <div class="box">
+    <p style="margin-top:0">Pour supprimer votre compte Scridle et toutes les données associées (e-mail, sauvegarde, classement, défis, jeton de notification) :</p>
+    <ol>
+      <li>Envoyez un e-mail à <a href="mailto:monentcie@gmail.com?subject=Suppression%20de%20mon%20compte%20Scridle">monentcie@gmail.com</a> avec pour objet « Suppression de mon compte Scridle ».</li>
+      <li>Envoyez-le <strong>depuis l'adresse e-mail de votre compte</strong> et indiquez votre pseudo.</li>
+    </ol>
+    <p style="margin-bottom:0">Nous supprimons le compte et les données dans un délai de 30 jours et vous le confirmons par e-mail. Aucune donnée n'est conservée, sauf obligation légale.</p>
+  </div>
+
+  <h2>10. Vos droits</h2>
+  <p>Conformément au RGPD, vous pouvez demander l'accès, la rectification, la suppression ou la portabilité de vos données, vous opposer à un traitement ou en limiter l'usage, et retirer votre consentement, en écrivant à <a href="mailto:monentcie@gmail.com">monentcie@gmail.com</a>. Vous pouvez aussi déposer une réclamation auprès de la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</p>
+
+  <h2>11. Enfants</h2>
+  <p>Scridle s'adresse aux personnes de 13 ans et plus. Nous ne collectons pas sciemment de données d'enfants de moins de 13 ans. Si vous pensez qu'un enfant nous a transmis des données, contactez-nous pour que nous les supprimions.</p>
+
+  <h2>12. Sécurité</h2>
+  <p>Les échanges entre le jeu et nos serveurs sont chiffrés (HTTPS). L'accès aux données est limité par des règles de sécurité : chaque joueur ne peut modifier que ses propres données.</p>
+
+  <h2>13. Modifications</h2>
+  <p>Nous pouvons modifier cette politique. La date de mise à jour en haut de page sera alors changée ; en cas de changement important, nous vous en informerons dans le jeu.</p>
+</main>
+</body>
+</html>
