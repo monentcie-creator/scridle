@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scridle — Suppression du compte</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d24; --muted:#5d5d6a; --line:#e4e4ea; --accent:#e0245e; --card:#f6f6f9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111116; --fg:#ececf1; --muted:#a3a3b2; --line:#2a2a33; --accent:#ff4f86; --card:#1a1a21; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { scroll-margin-top:64px; font-size:20px; margin:36px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { background:var(--card); }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border:none; padding:2px 0; } tr { border-bottom:1px solid var(--line); padding:8px 0; } td:first-child { font-weight:600; } }
+  nav { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--line); z-index:1; }
+  nav .in { max-width:760px; margin:0 auto; padding:0 16px; display:flex; gap:4px; overflow-x:auto; }
+  nav a { display:block; padding:14px 12px 12px; color:var(--muted); text-decoration:none; font-weight:600; font-size:15px; border-bottom:3px solid transparent; white-space:nowrap; }
+  nav a.on { color:var(--fg); border-bottom-color:var(--accent); }
+  .btn { display:inline-block; background:var(--accent); color:#fff !important; text-decoration:none; font-weight:700; padding:12px 18px; border-radius:999px; }
+</style>
+</head>
+<body>
+<nav><div class="in">
+  <a href="./">🔒 Confidentialité</a>
+  <a href="suppression.html" class="on">🗑️ Supprimer mon compte</a>
+</div></nav>
+<main>
+  <h1>Supprimer votre compte Scridle</h1>
+  <p class="muted">Application : Scridle (Android, <code>com.monent.scridle</code>) · Éditeur : Monent</p>
+
+  <p>Vous pouvez demander la suppression de votre compte Scridle et de toutes les données qui y sont liées, à tout moment et gratuitement. Vous n'avez pas besoin d'avoir encore le jeu installé.</p>
+
+  <h2>Comment faire</h2>
+  <div class="box">
+    <ol style="margin-top:0">
+      <li>Envoyez un e-mail à <a href="mailto:monentcie@gmail.com?subject=Suppression%20de%20mon%20compte%20Scridle">monentcie@gmail.com</a>.</li>
+      <li>Objet : <strong>« Suppression de mon compte Scridle »</strong>.</li>
+      <li>Envoyez-le <strong>depuis l'adresse e-mail utilisée pour votre compte</strong> et indiquez votre pseudo dans le jeu. Cela nous permet de vérifier que la demande vient bien de vous.</li>
+    </ol>
+    <p><a class="btn" href="mailto:monentcie@gmail.com?subject=Suppression%20de%20mon%20compte%20Scridle&body=Bonjour%2C%0A%0AJe%20souhaite%20supprimer%20mon%20compte%20Scridle%20et%20toutes%20mes%20donn%C3%A9es.%0A%0APseudo%20%3A%20">✉️ Écrire la demande</a></p>
+    <p class="muted" style="margin-bottom:0">Nous traitons la demande sous 30 jours au maximum et vous confirmons la suppression par e-mail.</p>
+  </div>
+
+  <h2>Données supprimées</h2>
+  <ul>
+    <li>Votre compte : adresse e-mail, mot de passe et identifiant de compte ;</li>
+    <li>votre sauvegarde dans le cloud (progression, équipements, succès) ;</li>
+    <li>votre pseudo et votre place dans le classement ;</li>
+    <li>votre jeton de notification ;</li>
+    <li>vos défis contre d'autres joueurs.</li>
+  </ul>
+
+  <h2>Données conservées</h2>
+  <p>Aucune donnée de votre compte n'est conservée après la suppression, sauf si la loi nous y oblige.</p>
+  <p>La partie enregistrée sur votre téléphone n'est pas concernée : elle reste sur l'appareil jusqu'à ce que vous désinstalliez le jeu ou effaciez ses données (Paramètres Android → Applications → Scridle → Stockage → Effacer les données).</p>
+  <p>Les données publicitaires sont gérées par Google AdMob. Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres Android (Google → Annonces).</p>
+
+  <h2>Supprimer seulement certaines données</h2>
+  <p>Vous pouvez aussi demander à supprimer seulement une partie de vos données (par exemple votre pseudo du classement) sans supprimer votre compte : précisez-le dans votre e-mail.</p>
+
+  <p class="muted" style="margin-top:40px">Pour en savoir plus sur les données collectées, consultez la <a href="./">politique de confidentialité</a>.</p>
+</main>
+</body>
+</html>
